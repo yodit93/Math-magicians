@@ -35,12 +35,11 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 96px);
+  grid-template-rows: repeat(5, 10vh);
 }
 
 .item {
   box-shadow: 2px 2px rgb(0, 0, 0, 0.15);
-  padding: 18%;
   display: flex;
   justify-content: center;
   align-items: center;
