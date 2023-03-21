@@ -18,7 +18,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Pokemon app: <a name="about-project"></a>
+# 📖 Math Magicians: <a name="about-project"></a>
 
 > Math-magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to do different calculations using the Math JS library. It is built with React and it is fully responsive.
 
