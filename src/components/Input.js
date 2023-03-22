@@ -1,25 +1,31 @@
-const Input = () => (
+import PropTypes from 'prop-types';
+
+const Input = ({ onHandleClick }) => (
   <div className="grid">
-    <p className="item">AC</p>
-    <p className="item">+/-</p>
-    <p className="item">%</p>
-    <p className="item division color">÷</p>
-    <p className="item">7</p>
-    <p className="item">8</p>
-    <p className="item">9</p>
-    <p className="item color">x</p>
-    <p className="item">4</p>
-    <p className="item">5</p>
-    <p className="item">6</p>
-    <p className="item color">-</p>
-    <p className="item">1</p>
-    <p className="item">2</p>
-    <p className="item">3</p>
-    <p className="item color">+</p>
-    <p className="item item0">0</p>
-    <p className="item">.</p>
-    <p className="item color">=</p>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">AC</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">+/-</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">%</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item division color">÷</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">7</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">8</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">9</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item color">x</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">4</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">5</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">6</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item color">-</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">1</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">2</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">3</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item color">+</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item item0">0</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item">.</button>
+    <button type="button" onClick={(e) => onHandleClick(e)} className="item color">=</button>
   </div>
 );
+
+Input.propTypes = {
+  onHandleClick: PropTypes.func.isRequired,
+};
 
 export default Input;
