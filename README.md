@@ -29,9 +29,9 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - Programming languages: 
-    HTML, CSS3, Javascript
+    JSX, CSS3, React
 - Tools: 
-    Git, GitHub, Linters, ES6, Webpack, Pokemon API, Interactive API
+    Git, GitHub, Linters, ES6, Webpack, Big API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -39,7 +39,7 @@
 
 ### Key Features <a name="key-features"></a>
 - Dynamic webpage
-- Fetch data from the API
+- Built with react components
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +106,7 @@ Finally run the app using the following syntax.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yodit93/Todo-list-app/issues).
+Feel free to check the [issues page](https://github.com/yodit93/Math-magicians/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
