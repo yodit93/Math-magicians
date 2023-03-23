@@ -15,8 +15,8 @@ const Quote = () => {
           'X-Api-Key': apiKey,
         },
       };
-      const category = 'success';
-      const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+      const catagory = 'success';
+      const url = `https://api.api-ninjas.com/v1/quotes?category=${catagory}`;
       const response = await fetch(url, options);
       if (!response.ok) {
         throw new Error('Could not fetch data');
