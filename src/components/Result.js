@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Result = ({ state }) => {
-  const [total, next, operation] = [state.total, state.next, state.operation];
+  const { total, next, operation } = state;
   return (
     <div className="result-cont">
       <span className="result">

@@ -13,8 +13,10 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <Result state={state} />
-      <Input onHandleClick={onHandleClick} />
+      <div className="math">
+        <Result state={state} />
+        <Input onHandleClick={onHandleClick} />
+      </div>
     </div>
   );
 };
