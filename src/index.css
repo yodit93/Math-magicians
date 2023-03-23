@@ -6,13 +6,27 @@
 
 .App {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
+.math-rapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  gap: 1rem;
+}
+
+.math-text {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
 .calculator {
-  width: 50%;
+  width: 45%;
   height: auto;
   background-color: lightgray;
 }
@@ -57,4 +71,8 @@
 .color {
   background-color: darkorange;
   border: 1px solid #ccc;
+}
+
+h2 {
+  margin-top: 10%;
 }
