@@ -12,10 +12,13 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator">
-      <div className="math">
-        <Result state={state} />
-        <Input onHandleClick={onHandleClick} />
+    <div className="math-rapper">
+      <div className="math-text">Let&apos;s do some Math</div>
+      <div className="calculator">
+        <div className="math">
+          <Result state={state} />
+          <Input onHandleClick={onHandleClick} />
+        </div>
       </div>
     </div>
   );

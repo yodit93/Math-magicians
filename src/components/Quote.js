@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const Quote = () => {
-  const [quote, setQuote] = useState(null);
+  const [quote, setQuote] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -26,8 +26,9 @@ const Quote = () => {
     };
     fetchData()
       .then((data) => {
-        setQuote(data[0].quote);
+        setQuote(data[0]);
         setIsLoading(false);
+        setError(null);
       })
       .catch((err) => {
         setError(err.message);
@@ -35,10 +36,15 @@ const Quote = () => {
       });
   }, [setQuote, setIsLoading]);
   return (
-    <div>
-      {error && <h2>{ error }</h2>}
-      { isLoading && <h2>Loading... </h2> }
-      <h2 className="quote-list">{ quote }</h2>
+    <div className="quote">
+      {error && <h2 className="message">{ error }</h2>}
+      { isLoading && <h2 className="message">Loading...</h2> }
+      { quote && (
+      <h2 className="quote message">
+        { quote.quote }
+        {quote.author && ` -- ${quote.author}`}
+      </h2>
+      )}
     </div>
   );
 };
