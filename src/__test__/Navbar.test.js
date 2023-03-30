@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from '../Navbar';
+import Navbar from '../components/Navbar';
 
 const MockNavbar = () => (
   <BrowserRouter>

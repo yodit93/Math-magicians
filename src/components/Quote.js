@@ -36,11 +36,11 @@ const Quote = () => {
       });
   }, [setQuote, setIsLoading]);
   return (
-    <div className="quote">
+    <div className="quote" data-testid="quote-cont">
       {error && <h2 className="message">{ error }</h2>}
       { isLoading && <h2 className="message">Loading...</h2> }
       { quote && (
-      <h2 className="quote message">
+      <h2 className="quote message" data-testid="quote-heading">
         { quote.quote }
         {quote.author && ` -- ${quote.author}`}
       </h2>

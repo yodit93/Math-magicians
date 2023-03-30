@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import Home from '../Home';
+import Home from '../components/Home';
 
 test('should render the home component', () => {
   const tree = renderer.create(<Home />).toJSON();
