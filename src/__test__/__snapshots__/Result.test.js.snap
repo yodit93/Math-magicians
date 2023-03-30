@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the Result component 1`] = `
+<div
+  className="result-cont"
+  data-testid="test"
+>
+  <span
+    className="result"
+  >
+     
+    +
+     
+    4
+  </span>
+</div>
+`;

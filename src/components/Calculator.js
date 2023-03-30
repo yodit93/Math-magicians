@@ -10,7 +10,6 @@ const Calculator = () => {
     const newState = calculate(state, targetText);
     setState(newState);
   };
-
   return (
     <div className="math-rapper">
       <div className="math-text">Let&apos;s do some Math</div>
