@@ -7,7 +7,7 @@ const Quote = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const apiKey = '1rcwC4O7dhqSluVRUuGwGQ==SE9TcCVPoQLRGnat';
+      const apiKey = process.env.REACT_APP_API_NINJAS_KEY;
       const options = {
         method: 'GET',
         headers: {
@@ -15,8 +15,7 @@ const Quote = () => {
           'X-Api-Key': apiKey,
         },
       };
-      const category = 'success';
-      const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+      const url = 'https://api.api-ninjas.com/v1/quotes';
       const response = await fetch(url, options);
       if (!response.ok) {
         throw new Error('Could not fetch data');
