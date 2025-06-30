@@ -50,7 +50,7 @@
 
 > Link to deployed project.
 
-- [Live Demo Link](https://math-magicians-full-website.onrender.com/)
+- [Live Demo Link](https://math-magician-web-app.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
